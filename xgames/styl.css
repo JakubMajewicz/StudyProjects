@@ -1,0 +1,3090 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/*XGAMES ASPEN*/
+
+body{
+
+    margin: 0px !important;
+}
+#title{
+    width: 100%;
+    height: 170px;
+    padding: 0px;
+    background-color: black;
+}
+#title h1{
+    margin: 0px;
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.media{
+    width: 220px;
+    transition-duration: 1s;
+}
+.media:hover{
+    width: 250px;
+}
+
+@media all and (max-width: 900px) {
+    .media:hover{
+        width: 220px;
+    }
+}
+
+
+/* MENU BLUE */
+
+.sticky{
+    position: -webkit-sticky;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.menublue{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    background-color: black;
+}
+.menublue a{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 32px;
+    transition-duration: 600ms;
+
+}
+.menublue a:hover{
+    text-decoration: overline;
+    color: #039BE5;
+}
+
+@media all and (max-width: 900px){
+    .sticky
+    {
+        position: static;
+    }
+    .menublue{
+        padding-left: 0;
+        padding-right: 0;
+        padding-top:0;
+        padding-bottom: 20px;
+        margin: 0;
+        width: 100%;
+        height: 200px;
+        display: block;
+        text-align: center;
+        list-style-type: none;
+        background-color: black;
+    }
+    .menublue a{
+        font-size: 28px;
+
+    }
+    .menublue li{
+        float: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 50%;
+        text-align: center;
+    }
+    .menublue a:hover{
+        text-decoration: none;
+        color: whitesmoke;
+    }
+
+}
+
+/* STRONA */
+.naglowek h1{
+    text-align: center;
+    background-color: black;
+    margin: 0;
+    padding: 20px;
+    color: whitesmoke;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 48px;
+}
+@media all and (max-width: 900px){
+    .naglowek h1{
+    font-size: 40px;
+    }
+
+}
+.strona1{
+    width: 100%;
+    height: 1750px;
+    background-color: bisque;
+    z-index: -1;
+
+}
+.opacity{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: #3F3F38;
+    opacity: 0;
+    transition-duration: 700ms;
+}
+
+
+/* 1 KAFELEK */
+
+.zawody{
+    float: left;
+    width: 50%;
+    height: 450px;
+    background-color: black;
+    position: relative;
+}
+.zawody img{
+    width: 100%;
+    height: 450px;
+    transition-duration: 700ms;
+}
+.zawodytekst{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+}
+.zawody p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    color: #E7E7DD;
+    opacity: 0;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 1.1;
+    transition-duration: 800ms;
+}
+
+.zawody:hover > .opacity{
+    height: 300px;
+    opacity: 0.6;
+}
+.zawody:hover p{
+    opacity: 1;
+}
+.zawody:hover h3{
+    opacity: 1;
+}
+.zawody:hover img{
+    height: 300px;
+}
+
+/* 2 KAFELEK */
+
+.james{
+    float: left;
+    width: 50%;
+    height: 450px;
+    background-color: black;
+    position: relative;
+}
+.james img{
+    width: 100%;
+    height: 450px;
+    transition-duration: 700ms;
+}
+.james h3{
+    position:absolute;
+    top: 10px;
+    left: 170px;
+    font-size: 48px;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    opacity: 0;
+    color: #E7E7DD;;
+    transition-duration: 800ms;
+}
+.james p{
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 19px;
+    padding: 0;
+    margin: 0;
+    color: #E7E7DD;
+    opacity: 0;
+    transition-duration: 800ms;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 20px;
+
+}
+.jamestekst{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.james:hover > .opacity{
+    height: 320px;
+    opacity: 0.6;
+}
+.james:hover p{
+    opacity: 1;
+}
+.james:hover h3{
+    opacity: 1;
+}
+.james:hover img{
+    height: 320px;
+}
+
+/* 3 KAFELEK */
+
+.wyniki{
+    width: 100%;
+    height: 600px;
+    float: left;
+    position: relative;
+}
+.wyniki img{
+  width: 100%;
+  height: 100%;
+}
+.wyniki h3{
+    position:absolute;
+    top: 15px;
+    left: 30px;
+    font-size: 48px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    color:#c7c7bb;
+}
+.tabela
+{
+    position: absolute;
+    top: 160px;
+    left: 70px;
+    background-color: #fdfdfd;
+    border-collapse: collapse;
+}
+.tabela img 
+{
+    height: 15px;
+    width: 28px;
+}
+.tabela td{
+    text-align: center;
+    border: 1px solid black;
+    padding: 2px;
+}
+.tabela th{
+    text-align: center;
+    border: 1px solid black;
+    background-color: #c7c7bb;
+    padding: 5px;
+}
+
+@media all and (max-width: 900px){
+    .opacity{
+        display: none;
+    }
+    .zawody{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 550px;
+    }
+
+    .zawody:hover  .opacity{
+        
+        opacity: 0%;
+    }
+    .zawody:hover img{
+        height: 60%;
+    }
+    .zawodytekst{
+        position: static;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .zawody p{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 30%;
+        opacity: 1;
+        font-size: 1em;
+    }
+    .zawody img{
+        height: 60%;
+    }
+
+    .james{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 590px;
+    }
+    .james h3{
+        position: static;
+        opacity: 1;
+        font-size: 28px;
+        text-align: center;
+    }
+    .james:hover  .opacity{
+        opacity: 0%;
+    }
+    .james:hover img{
+        height: 60%;
+    }
+    .jamestekst{
+        position: static;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .james p{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 30%;
+        opacity: 1;
+        font-size: 1em;
+    }
+    .james img{
+        height: 60%;
+        width: 100%;
+    }
+    .wyniki{
+        width: 100%;
+        height: 900px;
+        float: left;
+        position: relative;
+    }
+    .wyniki img{
+      width: 100%;
+      height: 100%;
+    }
+    .wyniki h3{
+        position:absolute;
+        font-size: 34px;
+        top: 0px;
+        margin: 0;
+        text-align: center;
+        font-family: 'Permanent Marker', cursive;
+        color:#c7c7bb;
+    }
+    .tabela
+    {
+        position: absolute;
+        left:0;
+        top: 100px;
+        height: 300px;
+        background-color: #fdfdfd;
+        border-collapse: collapse;
+    }
+    .tabela img 
+    {
+        height: 7.5px;
+        width: 14px;
+    }
+    .tabela td{
+        text-align: center;
+        border: 1px solid black;
+        padding: 2px;
+    }
+    .tabela th{
+        text-align: center;
+        border: 1px solid black;
+        background-color: #c7c7bb;
+        padding: 5px;
+    }
+
+
+}
+/* SPONSORZY */
+
+.sponsorzy{
+    width: 100%;
+    height: 320px;
+    float: left;
+    text-align: center;
+    background-color: #FFE4C4;
+}
+.sponsorzy h2{
+    text-align: center;
+    margin-bottom: 0;
+    font-family: 'Permanent Marker';
+    font-size: 40px;
+    margin-top: 20px
+}
+.spons{
+    width: 750px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.monster{
+    float: left;
+    width: 250px;
+    height: 100%;
+}
+.geico{
+    float: left;
+    width: 250px;
+    height: 100%;
+}
+.jeep{
+    float: left;
+    width: 250px;
+    height: 100%;
+}
+.monster img{
+    width: 85%;
+    padding-top: 20px;
+    transition-duration: 700ms;
+}
+.geico img{
+    padding-top: 40px;
+    width: 60%;
+    transition-duration: 700ms;
+}
+.jeep img{
+    padding-top: 45px;
+    width: 85%;
+    transition-duration: 700ms;
+}
+.monster:hover img{
+    padding-top: 0;
+    width: 95%;
+}
+.geico:hover img{
+    width: 70%;
+    padding-top:20px;
+}
+.jeep:hover img{
+    padding-top: 25px;
+    width: 95%;
+}
+
+@media all and (max-width: 900px){
+    .sponsorzy{
+        width: 100%;
+        height: 250px;
+        float: left;
+        text-align: center;
+        background-color: #FFE4C4;
+    }
+    .sponsorzy h2{
+        text-align: center;
+        margin-bottom: 0;
+        font-family: 'Permanent Marker';
+        font-size: 40px;
+        margin-top: 20px
+    }
+    .spons{
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    .monster{
+        float: left;
+        width: 33%;
+        height: 100%;
+    }
+    .geico{
+        float: left;
+        width: 33%;
+        height: 100%;
+    }
+    .jeep{
+        float: left;
+        width: 33%;
+        height: 100%;
+    }
+    .monster img{
+        width: 80%;
+        padding-top: 20px;
+        transition-duration: 700ms;
+    }
+    .geico img{
+        padding-top: 25px;
+        width: 60%;
+        transition-duration: 700ms;
+    }
+    .jeep img{
+        padding-top: 25px;
+        width: 85%;
+        transition-duration: 700ms;
+    }
+    .monster:hover img{
+        padding-top: 20px;
+        width: 80%;
+    }
+    .geico:hover img{
+        width: 60%;
+        padding-top:25px;
+    }
+    .jeep:hover img{
+        padding-top: 25px;
+        width: 85%;
+    }
+}
+/* SOCIALMEDIA */
+
+.socials{
+    width: 100%;
+    height: 100px;
+    float: left;
+    background-color: #3F3F38;
+    
+}
+.socialsblok{
+    width: 600px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.tw{
+    float: left;
+    width: 200px;
+    height: 100%;
+}
+.fb{
+    float: left;
+    width: 200px;
+    height: 100%;
+}
+.ig{
+    float: left;
+    width: 200px;
+    height: 100%;
+}
+.tw img{
+    width: 35%;
+    padding-top: 20px;
+    transition-duration: 700ms;
+}
+.fb img{
+    width: 30%;
+    padding-top: 20px;
+    transition-duration: 700ms;
+}
+.ig img{
+    width: 30%;
+    padding-top: 24px;
+    transition-duration: 700ms;
+}
+.tw:hover img{
+    width: 45%;
+    padding-top: 10px;
+}
+.fb:hover img{
+    width: 40%;
+    padding-top: 10px;
+}
+.ig:hover img{
+    width: 40%;
+    padding-top: 12px;
+}
+@media all and (max-width: 900px){
+
+    .socials{
+        width: 100%;
+        height: 100px;
+        float: left;
+        background-color: #3F3F38;
+    }
+    .socialsblok{
+         width: 100%;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .tw{
+        float: left;
+        width: 33%;
+        height: 100%;
+    }
+    .fb{
+        float: left;
+        width: 33%;
+        height: 100%;
+    }
+    .ig{
+        float: left;
+        width: 33%;
+        height: 100%;
+    }
+    .tw img{
+        width: 35%;
+        padding-top: 31.5px;
+        transition-duration: 700ms;
+    }
+    .fb img{
+        width: 30%;
+        padding-top: 30px;
+        transition-duration: 700ms;
+    }
+    .ig img{
+        width: 30%;
+        padding-top: 30px;
+        transition-duration: 700ms;
+    }
+    .tw:hover img{
+        width: 35%;
+        padding-top: 31.5px;
+    }
+    .fb:hover img{
+        width: 30%;
+        padding-top: 30px;
+    }
+    .ig:hover img{
+        width: 30%;
+        padding-top: 30px;
+    }
+}
+/* STOPKA */
+
+.footer{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #222222;
+    color:#E7E7DD
+}
+
+
+
+/* XGAMES CHIBA */
+
+.strona2{
+    width: 100%;
+    height: 1600px;
+    background-color: bisque;
+    z-index: -1;
+
+}
+
+/* MENU RED */
+
+.menured{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    background-color: black;
+}
+.menured a{
+    position: sticky;
+    top: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 32px;
+    transition-duration: 600ms;
+}
+.menured a:hover{
+    text-decoration: overline;
+    color: #e62727;
+}
+
+@media all and (max-width: 900px){
+    .menured{
+        padding-left: 0;
+        padding-right: 0;
+        padding-top:0;
+        padding-bottom: 20px;
+        margin: 0;
+        width: 100%;
+        height: 200px;
+        display: block;
+        text-align: center;
+        list-style-type: none;
+        background-color: black;
+    }
+    .menured a{
+        font-size: 28px;
+
+    }
+    .menured li{
+        float: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 50%;
+        text-align: center;
+    }
+    .menured a:hover{
+        text-decoration: none;
+        color: whitesmoke;
+    }
+}
+
+/* 1 KAFELEK */
+
+.zawodychiba{
+    float: left;
+    width: 50%;
+    height: 450px;
+    background-color: black;
+    position: relative;
+}
+.zawodychiba img{
+    width: 100%;
+    height: 450px;
+    transition-duration: 700ms;
+}
+.zawodychibatekst{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+}
+.zawodychiba p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    color: #E7E7DD;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 1.1em;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+
+.zawodychiba:hover > .opacity{
+    height: 350px;
+    opacity: 0.6;
+}
+.zawodychiba:hover p{
+    opacity: 1;
+}
+.zawodychiba:hover h3{
+    opacity: 1;
+}
+.zawodychiba:hover img{
+    height: 350px;
+}
+
+/* 2 KAFELEK */
+
+.brodka{
+    float: left;
+    width: 50%;
+    height: 450px;
+    background-color: black;
+    position: relative;
+}
+.brodka img{
+    width: 100%;
+    height: 450px;
+    transition-duration: 700ms;
+}
+.brodka h3{
+    position:absolute;
+    top: 10px;
+    left: 170px;
+    font-size: 48px;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    opacity: 0;
+    color: #E7E7DD;;
+    transition-duration: 800ms;
+}
+.brodka p{
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    color: #E7E7DD;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 1em;
+    opacity: 0;
+    transition-duration: 800ms;
+
+}
+.brodkatekst{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.brodka:hover > .opacity{
+    height: 350px;
+    opacity: 0.6;
+}
+.brodka:hover p{
+    opacity: 1;
+}
+.brodka:hover h3{
+    opacity: 1;
+}
+.brodka:hover img{
+    height: 350px;
+}
+
+/* 3 KAFELEK */
+
+.dyscbmx{
+    float: left;
+    width: 50%;
+    height: 450px;
+    background-color: black;
+    position: relative;
+}
+.dyscbmx img{
+    width: 100%;
+    height: 450px;
+    transition-duration: 700ms;
+}
+.dyscbmx h3{
+    position:absolute;
+    top: 10px;
+    left: 190px;
+    font-size: 48px;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    opacity: 0;
+    color: #E7E7DD;
+    transition-duration: 800ms;
+}
+.dyscbmx ul{
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+    color: #E7E7DD;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 1.1em;
+    list-style-type: none;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+.dyscbmx:hover > .opacity{
+    height: 315px;
+    opacity: 0.6;
+}
+.dyscbmx:hover ul{
+    opacity: 1;
+}
+.dyscbmx:hover h3{
+    opacity: 1;
+}
+.dyscbmx:hover img{
+    height: 315px;
+}
+
+/* 4 KAFELEK */
+
+.dyscskate{
+    float: left;
+    width: 50%;
+    height: 450px;
+    background-color: black;
+    position: relative;
+}
+.dyscskate img{
+    width: 100%;
+    height: 450px;
+    transition-duration: 700ms;
+}
+.skatetekst{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.dyscskate h3{
+    position:absolute;
+    top: 10px;
+    left: 190px;
+    font-size: 48px;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    opacity: 0;
+    color: #E7E7DD;
+    transition-duration: 800ms;
+}
+.dyscskate ul{
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    color: #E7E7DD;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 1em;
+    list-style-type: none;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+.dyscskate:hover > .opacity{
+    height: 315px;
+    opacity: 0.6;
+}
+.dyscskate:hover ul{
+    opacity: 1;
+}
+.dyscskate:hover h3{
+    opacity: 1;
+}
+.dyscskate:hover img{
+    height: 315px;
+}
+/* SPONSORZY */
+
+.yogibo{
+    float: left;
+    width: 250px;
+    height: 100%;
+}
+.yogibo img{
+    padding-top: 45px;
+    width: 90%;
+    transition-duration: 800ms;
+}
+.yogibo:hover img{
+    padding-top: 40px;
+    width: 100%;
+}
+.gshock{
+    float: left;
+    width: 250px;
+    height: 80%;
+}
+.gshock img{
+    padding-top: 70px;
+    width: 80%;
+    transition-duration: 800ms;
+}
+.gshock:hover img{
+    padding-top: 65px;
+    width: 100%;
+}
+
+
+@media all and (max-width: 900px) {
+    .zawodychiba{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 550px;
+    }
+
+    .zawodychiba:hover  .opacity{
+        
+        opacity: 0%;
+    }
+    .zawodychiba:hover img{
+        height: 60%;
+    }
+    .zawodychibatekst{
+        position: static;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .zawodychiba p{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 30%;
+        opacity: 1;
+        font-size: 1em;
+    }
+    .zawodychiba img{
+        height: 60%;
+    }
+
+    .brodka{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 590px;
+    }
+    .brodka h3{
+        position: static;
+        opacity: 1;
+        font-size: 28px;
+        text-align: center;
+    }
+    .brodka:hover  .opacity{
+        opacity: 0%;
+    }
+    .brodka:hover img{
+        height: 60%;
+    }
+    .brodkatekst{
+        position: static;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .brodka p{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 30%;
+        opacity: 1;
+        font-size: 1em;
+    }
+    .brodka img{
+        height: 60%;
+        width: 100%;
+    }
+    .dyscbmx{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 590px;
+    }
+    .dyscbmx h3{
+        position: static;
+        opacity: 1;
+        font-size: 28px;
+        text-align: center;
+    }
+    .dyscbmx:hover  .opacity{
+        opacity: 0%;
+    }
+    .dyscbmx:hover img{
+        height: 60%;
+    }
+
+    .dyscbmx ul{
+        text-align: center;
+        position: static;
+        float: left;
+        width: 100%;
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        color: #E7E7DD;
+        font-family: 'Permanent Marker', cursive;
+        line-height: 1em;
+        list-style-type: none;
+        opacity: 1;
+        transition-duration: 800ms;
+    }
+    .bmxtekst{
+        position: static;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .dyscbmx img{
+        height: 60%;
+        width: 100%;
+    }
+    .dyscbmx{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 590px;
+    }
+    .dyscbmx h3{
+        position: static;
+        opacity: 1;
+        font-size: 28px;
+        text-align: center;
+    }
+    .dyscbmx:hover  .opacity{
+        opacity: 0%;
+    }
+    .dyscbmx:hover img{
+        height: 60%;
+    }
+
+    .dyscskate{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 590px;
+    }
+    .dyscskate h3{
+        position: static;
+        opacity: 1;
+        font-size: 28px;
+        text-align: center;
+    }
+    .dyscskate:hover  .opacity{
+        opacity: 0%;
+    }
+    .dyscskate:hover img{
+        height: 60%;
+    }
+
+    .dyscskate ul{
+        text-align: center;
+        position: static;
+        float: left;
+        width: 100%;
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        color: #E7E7DD;
+        font-family: 'Permanent Marker', cursive;
+        line-height: 1em;
+        list-style-type: none;
+        opacity: 1;
+        transition-duration: 800ms;
+    }
+    .skatetekst{
+        position: static;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .dyscskate img{
+        height: 60%;
+        width: 100%;
+    }
+    .dyscskate{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 590px;
+    }
+    .dyscskate h3{
+        position: static;
+        opacity: 1;
+        font-size: 28px;
+        text-align: center;
+    }
+    .dyscskate:hover  .opacity{
+        opacity: 0%;
+    }
+    .dyscskate:hover img{
+        height: 60%;
+    }
+
+    .yogibo{
+        float: left;
+        width: 33%;
+        height: 100%;
+    }
+    .gshock{
+        float: left;
+        width: 33%;
+        height: 100%;
+    }
+    .yogibo img{
+        padding-top: 35px;
+        width: 100%;
+        transition-duration: 700ms;
+    }
+    .gshock img{
+        padding-top: 50px;
+        width: 85%;
+        transition-duration: 700ms;
+    }
+    .yogibo:hover img{
+        width: 100%;
+        padding-top:35px;
+    }
+    .gshock:hover img{
+        padding-top: 50px;
+        width: 85%;
+    }
+}
+
+
+/* SNOWBOARD */
+
+/* 1 KAFELEK */
+
+.superpipe{
+    float: left;
+    width: 50%;
+    height: 450px;
+    background-color: black;
+    position: relative;
+}
+.superpipe img{
+    width: 100%;
+    height: 450px;
+    transition-duration: 700ms;
+}
+.superpipetekst{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+}
+.superpipe h3{
+    position:absolute;
+    top: 10px;
+    left: 280px;
+    font-size: 48px;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    opacity: 0;
+    color: #E7E7DD;
+    transition-duration: 800ms;
+}
+.superpipe p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    color: #E7E7DD;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 1.1em;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+
+.superpipe:hover > .opacity{
+    height: 350px;
+    opacity: 0.6;
+}
+.superpipe:hover p{
+    opacity: 1;
+}
+.superpipe:hover h3{
+    opacity: 1;
+}
+.superpipe:hover img{
+    height: 350px;
+}
+
+/* 2 KAFELEK */
+
+.superpipe1{
+    float: left;
+    width: 50%;
+    height: 450px;
+    background-color: black;
+    position: relative;
+}
+.superpipe1 img{
+    width: 100%;
+    height: 450px;
+    transition-duration: 700ms;
+}
+.superpipe1tekst{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+}
+.superpipe1 h3{
+    position:absolute;
+    top: 10px;
+    left: 190px;
+    font-size: 48px;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    opacity: 0;
+    color: #E7E7DD;
+    transition-duration: 800ms;
+}
+.superpipe1 p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    color: #E7E7DD;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 1.1em;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+.superpipe1 ol{
+    list-style-type:upper-roman;
+    font-family: 'Permanent Marker', cursive;
+    color: #E7E7DD;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+.superpipe1 h4{
+    font-family:  'Permanent Marker', cursive;
+    color: #E7E7DD;
+    font-size: 24px;
+    margin-bottom: 0;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+
+.superpipe1:hover > .opacity{
+    height: 320px;
+    opacity: 0.6;
+}
+.superpipe1:hover p{
+    opacity: 1;
+}
+.superpipe1:hover h3{
+    opacity: 1;
+}
+.superpipe1:hover img{
+    height: 320px;
+}
+.superpipe1:hover ol{
+    opacity: 1;
+}
+.superpipe1:hover h4{
+    opacity: 1;
+}
+.superpipeM{
+    position: absolute;
+    bottom: 10px;
+    left: 80px;
+}
+.superpipeK{
+    position: absolute;
+    bottom: 10px;
+    right: 100px;
+}
+
+/* 3 KAFELEK */
+
+.knucklehuck{
+    float: left;
+    width: 50%;
+    height: 450px;
+    background-color: black;
+    position: relative;
+}
+.knucklehuck img{
+    width: 100%;
+    height: 450px;
+    transition-duration: 700ms;
+}
+.knuckletekst{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+}
+.knucklehuck h3{
+    position:absolute;
+    top: 10px;
+    left: 240px;
+    font-size: 48px;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    opacity: 0;
+    color: #E7E7DD;
+    transition-duration: 800ms;
+}
+.knucklehuck p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    color: #E7E7DD;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 1.1em;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+
+.knucklehuck:hover > .opacity{
+    height: 350px;
+    opacity: 0.6;
+}
+.knucklehuck:hover p{
+    opacity: 1;
+}
+.knucklehuck:hover h3{
+    opacity: 1;
+}
+.knucklehuck:hover img{
+    height: 350px;
+}
+
+/* 4 KAFELEK */
+
+.knucklehuck1{
+    float: left;
+    width: 50%;
+    height: 450px;
+    background-color: black;
+    position: relative;
+}
+.knucklehuck1 img{
+    width: 100%;
+    height: 450px;
+    transition-duration: 700ms;
+}
+.knuckle1tekst{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+}
+.knucklehuck1 h3{
+    position:absolute;
+    top: 10px;
+    left: 140px;
+    font-size: 48px;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    opacity: 0;
+    color: #E7E7DD;
+    transition-duration: 800ms;
+}
+.knucklehuck1 h4{
+    font-family:  'Permanent Marker', cursive;
+    color: #E7E7DD;
+    font-size: 24px;
+    margin-bottom: 0;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+.knucklehuck1 ol{
+    list-style-type:upper-roman;
+    font-family: 'Permanent Marker', cursive;
+    color: #E7E7DD;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+.knucklehuck1:hover > .opacity{
+    height: 320px;
+    opacity: 0.6;
+}
+.knucklehuck1:hover p{
+    opacity: 1;
+}
+.knucklehuck1:hover h3{
+    opacity: 1;
+}
+.knucklehuck1:hover img{
+    height: 320px;
+}
+.knuckleM{
+    position: absolute;
+    bottom: 10px;
+    left: 80px;
+}
+.knuckleK{
+    position: absolute;
+    bottom: 10px;
+    right: 100px;
+}
+.knucklehuck1:hover ol{
+    opacity: 1;
+}
+.knucklehuck1:hover h4{
+    opacity: 1;
+}
+
+@media all and (max-width: 900px){
+    .superpipe{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 550px;
+    }
+
+    .superpipe:hover  .opacity{
+        
+        opacity: 0%;
+    }
+    .superpipe:hover img{
+        height: 60%;
+    }
+    .superpipetekst{
+        position: static;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .superpipe p{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 30%;
+        opacity: 1;
+        font-size: 1em;
+    }
+    .superpipe h3{
+        position: static;
+        opacity: 1;
+        font-size: 28px;
+        text-align: center;
+    }
+    .superpipe img{
+        height: 60%;
+    }
+
+    .superpipe1{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 750px;
+    }
+    .superpipe1 h3{
+        position: static;
+        opacity: 1;
+        font-size: 28px;
+        text-align: center;
+    }
+    .superpipe1:hover  .opacity{
+        opacity: 0%;
+    }
+    .superpipe1:hover img{
+        height: 60%;
+    }
+    .superpipe1tekst{
+        position: static;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .superpipeM{
+        text-align: center;
+        position: static;
+        float: left;
+        width: 100%;
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        color: #E7E7DD;
+        font-family: 'Permanent Marker', cursive;
+        line-height: 1em;
+        list-style-type: none;
+        opacity: 1;
+        transition-duration: 800ms;
+    }
+    .superpipeK{
+        text-align: center;
+        position: static;
+        float: left;
+        width: 100%;
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        color: #E7E7DD;
+        font-family: 'Permanent Marker', cursive;
+        line-height: 1em;
+        list-style-type: none;
+        opacity: 1;
+        transition-duration: 800ms;
+    }
+    .superpipe1 img{
+        height: 60%;
+        width: 100%;
+    }
+    .superpipe1 ol{
+        opacity: 1;
+    }
+    .superpipe1 h4{
+        opacity: 1;
+    }
+    .knucklehuck{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 550px;
+    }
+
+    .knucklehuck:hover  .opacity{
+        
+        opacity: 0%;
+    }
+    .knucklehuck:hover img{
+        height: 60%;
+    }
+    .knuckletekst{
+        position: static;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .knucklehuck p{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 30%;
+        opacity: 1;
+        font-size: 1em;
+    }
+    .knucklehuck h3{
+        position: static;
+        opacity: 1;
+        font-size: 28px;
+        text-align: center;
+    }
+    .knucklehuck img{
+        height: 60%;
+    }
+
+    .knucklehuck1{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 820px;
+    }
+    .knucklehuck1 h3{
+        position: static;
+        opacity: 1;
+        font-size: 28px;
+        text-align: center;
+    }
+    .knucklehuck1:hover  .opacity{
+        opacity: 0%;
+    }
+    .knucklehuck1:hover img{
+        height: 60%;
+    }
+    .knuckle1tekst{
+        position: static;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .knuckleM{
+        text-align: center;
+        position: static;
+        float: left;
+        width: 100%;
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        color: #E7E7DD;
+        font-family: 'Permanent Marker', cursive;
+        line-height: 1em;
+        list-style-type: none;
+        opacity: 1;
+        transition-duration: 800ms;
+    }
+    .knuckleK{
+        text-align: center;
+        position: static;
+        float: left;
+        width: 100%;
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        color: #E7E7DD;
+        font-family: 'Permanent Marker', cursive;
+        line-height: 1em;
+        list-style-type: none;
+        opacity: 1;
+        transition-duration: 800ms;
+    }
+    .knucklehuck1 img{
+        height: 60%;
+        width: 100%;
+    }
+    .knucklehuck1 ol{
+        opacity: 1;
+    }
+    .knucklehuck1 h4{
+        opacity: 1;
+    }
+}
+/* SKIING */
+
+/* 1 KAFELEK */
+
+.slopestyle{
+    float: left;
+    width: 50%;
+    height: 450px;
+    background-color: black;
+    position: relative;
+}
+.slopestyle img{
+    width: 100%;
+    height: 450px;
+    transition-duration: 700ms;
+}
+.slopestyletekst{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+}
+.slopestyle h3{
+    position:absolute;
+    top: 10px;
+    left: 270px;
+    font-size: 48px;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    opacity: 0;
+    color: #E7E7DD;
+    transition-duration: 800ms;
+}
+.slopestyle p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    color: #E7E7DD;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 1.1em;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+
+.slopestyle:hover > .opacity{
+    height: 350px;
+    opacity: 0.6;
+}
+.slopestyle:hover p{
+    opacity: 1;
+}
+.slopestyle:hover h3{
+    opacity: 1;
+}
+.slopestyle:hover img{
+    height: 350px;
+}
+
+/* 2 KAFELEK */
+
+.slopestyle1{
+    float: left;
+    width: 50%;
+    height: 450px;
+    background-color: black;
+    position: relative;
+}
+.slopestyle1 img{
+    width: 100%;
+    height: 450px;
+    transition-duration: 700ms;
+}
+.slopestyle1tekst{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+}
+.slopestyle1 h3{
+    position:absolute;
+    top: 10px;
+    left: 170px;
+    font-size: 48px;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    opacity: 0;
+    color: #E7E7DD;
+    transition-duration: 800ms;
+}
+.slopestyle1 p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    color: #E7E7DD;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 1.1em;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+.slopestyle1 ol{
+    list-style-type:upper-roman;
+    font-family: 'Permanent Marker', cursive;
+    color: #E7E7DD;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+.slopestyle1 h4{
+    font-family:  'Permanent Marker', cursive;
+    color: #E7E7DD;
+    font-size: 24px;
+    margin-bottom: 0;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+
+.slopestyle1:hover > .opacity{
+    height: 320px;
+    opacity: 0.6;
+}
+.slopestyle1:hover p{
+    opacity: 1;
+}
+.slopestyle1:hover h3{
+    opacity: 1;
+}
+.slopestyle1:hover img{
+    height: 320px;
+}
+.slopestyle1:hover ol{
+    opacity: 1;
+}
+.slopestyle1:hover h4{
+    opacity: 1;
+}
+.slopestyleM{
+    position: absolute;
+    bottom: 10px;
+    left: 80px;
+}
+.slopestyleK{
+    position: absolute;
+    bottom: 10px;
+    right: 100px;
+}
+
+/* 3 KAFELEK */
+
+.bigair{
+    float: left;
+    width: 50%;
+    height: 450px;
+    background-color: black;
+    position: relative;
+}
+.bigair img{
+    width: 100%;
+    height: 450px;
+    transition-duration: 700ms;
+}
+.bigairtekst{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+}
+.bigair h3{
+    position:absolute;
+    top: 10px;
+    left: 310px;
+    font-size: 48px;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    opacity: 0;
+    color: #E7E7DD;
+    transition-duration: 800ms;
+}
+.bigair p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    color: #E7E7DD;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 1.1em;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+
+.bigair:hover > .opacity{
+    height: 350px;
+    opacity: 0.6;
+}
+.bigair:hover p{
+    opacity: 1;
+}
+.bigair:hover h3{
+    opacity: 1;
+}
+.bigair:hover img{
+    height: 350px;
+}
+
+
+/* 4 KAFELEK */
+
+.bigair1{
+    float: left;
+    width: 50%;
+    height: 450px;
+    background-color: black;
+    position: relative;
+}
+.bigair1 img{
+    width: 100%;
+    height: 450px;
+    transition-duration: 700ms;
+}
+.bigair1tekst{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+}
+.bigair1 h3{
+    position:absolute;
+    top: 10px;
+    left: 220px;
+    font-size: 48px;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    opacity: 0;
+    color: #E7E7DD;
+    transition-duration: 800ms;
+}
+.bigair1 h4{
+    font-family:  'Permanent Marker', cursive;
+    color: #E7E7DD;
+    font-size: 24px;
+    margin-bottom: 0;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+.bigair1 ol{
+    list-style-type:upper-roman;
+    font-family: 'Permanent Marker', cursive;
+    color: #E7E7DD;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+.bigair1:hover > .opacity{
+    height: 320px;
+    opacity: 0.6;
+}
+.bigair1:hover p{
+    opacity: 1;
+}
+.bigair1:hover h3{
+    opacity: 1;
+}
+.bigair1:hover img{
+    height: 320px;
+}
+.bigairM{
+    position: absolute;
+    bottom: 10px;
+    left: 80px;
+}
+.bigairK{
+    position: absolute;
+    bottom: 10px;
+    right: 100px;
+}
+.bigair1:hover ol{
+    opacity: 1;
+}
+.bigair1:hover h4{
+    opacity: 1;
+}
+
+@media all and (max-width: 900px){
+    .slopestyle{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 550px;
+    }
+
+    .slopestyle:hover  .opacity{
+        
+        opacity: 0%;
+    }
+    .slopestyle:hover img{
+        height: 60%;
+    }
+    .slopestyletekst{
+        position: static;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .slopestyle p{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 30%;
+        opacity: 1;
+        font-size: 1em;
+    }
+    .slopestyle h3{
+        position: static;
+        opacity: 1;
+        font-size: 28px;
+        text-align: center;
+    }
+    .slopestyle img{
+        height: 60%;
+    }
+
+    .slopestyle1{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 750px;
+    }
+    .slopestyle1 h3{
+        position: static;
+        opacity: 1;
+        font-size: 28px;
+        text-align: center;
+    }
+    .slopestyle1:hover  .opacity{
+        opacity: 0%;
+    }
+    .slopestyle1:hover img{
+        height: 60%;
+    }
+    .slopestyle1tekst{
+        position: static;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .slopestyleM{
+        text-align: center;
+        position: static;
+        float: left;
+        width: 100%;
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        color: #E7E7DD;
+        font-family: 'Permanent Marker', cursive;
+        line-height: 1em;
+        list-style-type: none;
+        opacity: 1;
+        transition-duration: 800ms;
+    }
+    .slopestyleK{
+        text-align: center;
+        position: static;
+        float: left;
+        width: 100%;
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        color: #E7E7DD;
+        font-family: 'Permanent Marker', cursive;
+        line-height: 1em;
+        list-style-type: none;
+        opacity: 1;
+        transition-duration: 800ms;
+    }
+    .slopestyle1 img{
+        height: 60%;
+        width: 100%;
+    }
+    .slopestyle1 ol{
+        opacity: 1;
+    }
+    .slopestyle1 h4{
+        opacity: 1;
+    }
+    .bigair{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 550px;
+    }
+
+    .bigair:hover  .opacity{
+        
+        opacity: 0%;
+    }
+    .bigair:hover img{
+        height: 60%;
+    }
+    .bigairtekst{
+        position: static;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .bigair p{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 30%;
+        opacity: 1;
+        font-size: 1em;
+    }
+    .bigair h3{
+        position: static;
+        opacity: 1;
+        font-size: 28px;
+        text-align: center;
+    }
+    .bigair img{
+        height: 60%;
+    }
+
+    .bigair1{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 750px;
+    }
+    .bigair1 h3{
+        position: static;
+        opacity: 1;
+        font-size: 28px;
+        text-align: center;
+    }
+    .bigair1:hover  .opacity{
+        opacity: 0%;
+    }
+    .bigair1:hover img{
+        height: 60%;
+    }
+    .bigair1tekst{
+        position: static;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .bigairM{
+        text-align: center;
+        position: static;
+        float: left;
+        width: 100%;
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        color: #E7E7DD;
+        font-family: 'Permanent Marker', cursive;
+        line-height: 1em;
+        list-style-type: none;
+        opacity: 1;
+        transition-duration: 800ms;
+    }
+    .bigairK{
+        text-align: center;
+        position: static;
+        float: left;
+        width: 100%;
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        color: #E7E7DD;
+        font-family: 'Permanent Marker', cursive;
+        line-height: 1em;
+        list-style-type: none;
+        opacity: 1;
+        transition-duration: 800ms;
+    }
+    .bigair1 img{
+        height: 60%;
+        width: 100%;
+    }
+    .bigair1 ol{
+        opacity: 1;
+    }
+    .bigair1 h4{
+        opacity: 1;
+    }
+}
+/* SKATEBOARD */
+
+/* 1 KAFELEK */
+
+.park{
+    float: left;
+    width: 50%;
+    height: 450px;
+    background-color: black;
+    position: relative;
+}
+.park img{
+    width: 100%;
+    height: 450px;
+    transition-duration: 700ms;
+}
+.parktekst{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+}
+.park h3{
+    position:absolute;
+    top: 10px;
+    left: 210px;
+    font-size: 48px;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    opacity: 0;
+    color: #E7E7DD;
+    transition-duration: 800ms;
+}
+.park p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    color: #E7E7DD;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 1.1em;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+
+.park:hover > .opacity{
+    height: 350px;
+    opacity: 0.6;
+}
+.park:hover p{
+    opacity: 1;
+}
+.park:hover h3{
+    opacity: 1;
+}
+.park:hover img{
+    height: 350px;
+}
+
+/* 2 KAFELEK */
+
+.street{
+    float: left;
+    width: 50%;
+    height: 450px;
+    background-color: black;
+    position: relative;
+}
+.street img{
+    width: 100%;
+    height: 450px;
+    transition-duration: 700ms;
+}
+.streettekst{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+}
+.street h3{
+    position:absolute;
+    top: 10px;
+    left: 180px;
+    font-size: 48px;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    opacity: 0;
+    color: #E7E7DD;
+    transition-duration: 800ms;
+}
+.street p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    color: #E7E7DD;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 1.1em;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+
+.street:hover > .opacity{
+    height: 350px;
+    opacity: 0.6;
+}
+.street:hover p{
+    opacity: 1;
+}
+.street:hover h3{
+    opacity: 1;
+}
+.street:hover img{
+    height: 350px;
+}
+.street:hover ol{
+    opacity: 1;
+}
+.street:hover h4{
+    opacity: 1;
+}
+
+/* 3 KAFELEK */
+
+.vert{
+    float: left;
+    width: 50%;
+    height: 450px;
+    background-color: black;
+    position: relative;
+}
+.vert img{
+    width: 100%;
+    height: 450px;
+    transition-duration: 700ms;
+}
+.verttekst{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+}
+.vert h3{
+    position:absolute;
+    top: 10px;
+    left: 210px;
+    font-size: 48px;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    opacity: 0;
+    color: #E7E7DD;
+    transition-duration: 800ms;
+}
+.vert p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    color: #E7E7DD;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 1.1em;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+
+.vert:hover > .opacity{
+    height: 350px;
+    opacity: 0.6;
+}
+.vert:hover p{
+    opacity: 1;
+}
+.vert:hover h3{
+    opacity: 1;
+}
+.vert:hover img{
+    height: 350px;
+}
+
+/* 4 KAFELEK */
+
+.tonyhawk{
+    float: left;
+    width: 50%;
+    height: 450px;
+    background-color: black;
+    position: relative;
+}
+.tonyhawk img{
+    width: 100%;
+    height: 450px;
+    transition-duration: 700ms;
+}
+.tonyhawktekst{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+}
+.tonyhawk h3{
+    position:absolute;
+    top: 10px;
+    left: 280px;
+    font-size: 48px;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    opacity: 0;
+    color: #E7E7DD;
+    transition-duration: 800ms;
+}
+.tonyhawk p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    color: #E7E7DD;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 1.1em;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+
+.tonyhawk:hover > .opacity{
+    height: 320px;
+    opacity: 0.6;
+}
+.tonyhawk:hover p{
+    opacity: 1;
+}
+.tonyhawk:hover h3{
+    opacity: 1;
+}
+.tonyhawk:hover img{
+    height: 320px;
+}
+.tonyhawk:hover ol{
+    opacity: 1;
+}
+.tonyhawk:hover h4{
+    opacity: 1;
+}
+
+@media all and (max-width: 900px){
+    .park{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 550px;
+    }
+
+    .park:hover  .opacity{
+        
+        opacity: 0%;
+    }
+    .park:hover img{
+        height: 60%;
+    }
+    .parktekst{
+        position: static;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .park p{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 30%;
+        opacity: 1;
+        font-size: 1em;
+    }
+    .park h3{
+        position: static;
+        opacity: 1;
+        font-size: 28px;
+        text-align: center;
+    }
+    .park img{
+        height: 60%;
+    }
+    .street{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 550px;
+    }
+
+    .street:hover  .opacity{
+        
+        opacity: 0%;
+    }
+    .street:hover img{
+        height: 60%;
+    }
+    .streettekst{
+        position: static;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .street p{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 30%;
+        opacity: 1;
+        font-size: 1em;
+    }
+    .street h3{
+        position: static;
+        opacity: 1;
+        font-size: 28px;
+        text-align: center;
+    }
+    .street img{
+        height: 60%;
+    }
+    .vert{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 550px;
+    }
+
+    .vert:hover  .opacity{
+        
+        opacity: 0%;
+    }
+    .vert:hover img{
+        height: 60%;
+    }
+    .verttekst{
+        position: static;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .vert p{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 30%;
+        opacity: 1;
+        font-size: 1em;
+    }
+    .vert h3{
+        position: static;
+        opacity: 1;
+        font-size: 28px;
+        text-align: center;
+    }
+    .vert img{
+        height: 60%;
+    }
+    .tonyhawk{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 590px;
+    }
+
+    .tonyhawk:hover  .opacity{
+        
+        opacity: 0%;
+    }
+    .tonyhawk:hover img{
+        height: 60%;
+    }
+    .tonyhawktekst{
+        position: static;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .tonyhawk p{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 30%;
+        opacity: 1;
+        font-size: 1em;
+    }
+    .tonyhawk h3{
+        position: static;
+        opacity: 1;
+        font-size: 28px;
+        text-align: center;
+    }
+    .tonyhawk img{
+        height: 60%;
+    }
+}
+/* BMX */
+
+/* 1 KAFELEK */
+
+.park1{
+    float: left;
+    width: 50%;
+    height: 450px;
+    background-color: black;
+    position: relative;
+}
+.park1 img{
+    width: 100%;
+    height: 450px;
+    transition-duration: 700ms;
+}
+.park1tekst{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+}
+.park1 h3{
+    position:absolute;
+    top: 10px;
+    left: 300px;
+    font-size: 48px;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    opacity: 0;
+    color: #E7E7DD;
+    transition-duration: 800ms;
+}
+.park1 p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    color: #E7E7DD;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 1.1em;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+
+.park1:hover > .opacity{
+    height: 350px;
+    opacity: 0.6;
+}
+.park1:hover p{
+    opacity: 1;
+}
+.park1:hover h3{
+    opacity: 1;
+}
+.park1:hover img{
+    height: 350px;
+}
+
+/* 2 KAFELEK */
+
+.street1{
+    float: left;
+    width: 50%;
+    height: 450px;
+    background-color: black;
+    position: relative;
+}
+.street1 img{
+    width: 100%;
+    height: 450px;
+    transition-duration: 700ms;
+}
+.street1tekst{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+}
+.street1 h3{
+    position:absolute;
+    top: 10px;
+    left: 270px;
+    font-size: 48px;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    opacity: 0;
+    color: #E7E7DD;
+    transition-duration: 800ms;
+}
+.street1 p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    color: #E7E7DD;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 1.1em;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+
+.street1:hover > .opacity{
+    height: 350px;
+    opacity: 0.6;
+}
+.street1:hover p{
+    opacity: 1;
+}
+.street1:hover h3{
+    opacity: 1;
+}
+.street1:hover img{
+    height: 350px;
+}
+.street1:hover ol{
+    opacity: 1;
+}
+.street1:hover h4{
+    opacity: 1;
+}
+
+/* 3 KAFELEK */
+
+.flat{
+    float: left;
+    width: 50%;
+    height: 450px;
+    background-color: black;
+    position: relative;
+}
+.flat img{
+    width: 100%;
+    height: 450px;
+    transition-duration: 700ms;
+}
+.flattekst{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+}
+.flat h3{
+    position:absolute;
+    top: 10px;
+    left: 230px;
+    font-size: 48px;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    opacity: 0;
+    color: #E7E7DD;
+    transition-duration: 800ms;
+}
+.flat p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    color: #E7E7DD;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 1.1em;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+
+.flat:hover > .opacity{
+    height: 350px;
+    opacity: 0.6;
+}
+.flat:hover p{
+    opacity: 1;
+}
+.flat:hover h3{
+    opacity: 1;
+}
+.flat:hover img{
+    height: 350px;
+}
+
+/* 4 KAFELEK */
+
+.motox{
+    float: left;
+    width: 50%;
+    height: 450px;
+    background-color: black;
+    position: relative;
+}
+.motox img{
+    width: 100%;
+    height: 450px;
+    transition-duration: 700ms;
+}
+.motoxtekst{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+}
+.motox h3{
+    position:absolute;
+    top: 10px;
+    left: 320px;
+    font-size: 48px;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    opacity: 0;
+    color: #E7E7DD;
+    transition-duration: 800ms;
+}
+.motox p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    color: #E7E7DD;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 1.1em;
+    opacity: 0;
+    transition-duration: 800ms;
+}
+
+.motox:hover > .opacity{
+    height: 350px;
+    opacity: 0.6;
+}
+.motox:hover p{
+    opacity: 1;
+}
+.motox:hover h3{
+    opacity: 1;
+}
+.motox:hover img{
+    height: 350px;
+}
+.motox:hover ol{
+    opacity: 1;
+}
+.motox:hover h4{
+    opacity: 1;
+}
+
+@media all and (max-width: 900px){
+    .park1{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 550px;
+    }
+
+    .park1:hover  .opacity{
+        
+        opacity: 0%;
+    }
+    .park1:hover img{
+        height: 60%;
+    }
+    .park1tekst{
+        position: static;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .park1 p{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 30%;
+        opacity: 1;
+        font-size: 1em;
+    }
+    .park1 h3{
+        position: static;
+        opacity: 1;
+        font-size: 28px;
+        text-align: center;
+    }
+    .park1 img{
+        height: 60%;
+    }
+    .street1{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 550px;
+    }
+
+    .street1:hover  .opacity{
+        
+        opacity: 0%;
+    }
+    .street1:hover img{
+        height: 60%;
+    }
+    .street1tekst{
+        position: static;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .street1 p{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 30%;
+        opacity: 1;
+        font-size: 1em;
+    }
+    .street1 h3{
+        position: static;
+        opacity: 1;
+        font-size: 28px;
+        text-align: center;
+    }
+    .street1 img{
+        height: 60%;
+    }
+    .flat{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 550px;
+    }
+
+    .flat:hover  .opacity{
+        
+        opacity: 0%;
+    }
+    .flat:hover img{
+        height: 60%;
+    }
+    .flattekst{
+        position: static;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .flat p{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 30%;
+        opacity: 1;
+        font-size: 1em;
+    }
+    .flat h3{
+        position: static;
+        opacity: 1;
+        font-size: 28px;
+        text-align: center;
+    }
+    .flat img{
+        height: 60%;
+    }
+    .motox{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 590px;
+    }
+
+    .motox:hover  .opacity{
+        
+        opacity: 0%;
+    }
+    .motox:hover img{
+        height: 60%;
+    }
+    .motoxtekst{
+        position: static;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+    .motox p{
+        position: static;
+        float: left;
+        width: 100%;
+        height: 30%;
+        opacity: 1;
+        font-size: 1em;
+    }
+    .motox h3{
+        position: static;
+        opacity: 1;
+        font-size: 28px;
+        text-align: center;
+    }
+    .motox img{
+        height: 60%;
+    }
+}
