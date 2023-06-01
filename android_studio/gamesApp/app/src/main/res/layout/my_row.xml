@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/id_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="#000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="God of War"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                app:layout_constraintStart_toEndOf="@+id/id_txt"
+                app:layout_constraintTop_toTopOf="@+id/id_txt" />
+
+            <TextView
+                android:id="@+id/studio_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Santa Monica"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/name_txt"
+                app:layout_constraintTop_toBottomOf="@+id/name_txt" />
+
+            <TextView
+                android:id="@+id/price_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017"
+                app:layout_constraintStart_toStartOf="@+id/studio_txt"
+                app:layout_constraintTop_toBottomOf="@+id/studio_txt" />
+
+            <TextView
+                android:id="@+id/year_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="280"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/name_txt"
+                app:layout_constraintTop_toTopOf="@+id/name_txt" />
+
+            <TextView
+                android:id="@+id/type_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fantasy"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/year_txt" />
+
+            <TextView
+                android:id="@+id/cena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cena: "
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/year_txt"
+                app:layout_constraintEnd_toStartOf="@+id/year_txt"
+                app:layout_constraintTop_toTopOf="@+id/year_txt" />
+
+            <TextView
+                android:id="@+id/typ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Typ: "
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/type_txt"
+                app:layout_constraintEnd_toStartOf="@+id/type_txt"
+                app:layout_constraintTop_toTopOf="@+id/type_txt" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
